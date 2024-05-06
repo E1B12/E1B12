@@ -2,32 +2,54 @@
 #include<stdlib.h>
 int main(){
 	int password,n=1;
-	printf("½Ð¿é¤J4­Ó¼Æ¦rªº±K½X\n");
+	printf("è«‹è¼¸å…¥4å€‹æ•¸å­—çš„å¯†ç¢¼\n");
 	scanf("%d",&password);
 	while(1){
 		if(password==2024){
 			break;
 		}
 		else if(n<3){
-			printf("±K½X¿ù»~\n");
+			printf("å¯†ç¢¼éŒ¯èª¤\n");
 			n++;
 			scanf("%d",&password);
 		}
 		else{
-			printf("Äµ§i\n");
-			printf("%c",'\a');	//¿é¥XÄµ§iÁnÅT
+			printf("è­¦å‘Š\n");
+			printf("%c",'\a');	//è¼¸å‡ºè­¦å‘Šè²éŸ¿
 			return 0;
 		}	
 	}
-	system("CLS");	// ²M°£¿Ã¹õ
+	system("CLS");	// æ¸…é™¤èž¢å¹•
 	char a[0];
 	printf("----------------------\n");
-	printf("| a. µe¥Xª½¨¤¤T¨¤§Î  |\n");
-	printf("| b. Åã¥Ü­¼ªkªí      |\n");
-	printf("| c. µ²§ô            |\n");
+	printf("| a. ç•«å‡ºç›´è§’ä¸‰è§’å½¢  |\n");
+	printf("| b. é¡¯ç¤ºä¹˜æ³•è¡¨      |\n");
+	printf("| c. çµæŸ            |\n");
 	printf("----------------------\n");
 	scanf("%s",&a[0]);
+	switch(a[0])
+	{
+		case 'a':
+			printf("%c\n",a[0]);
+			
+			break;
+		case 'b':
+			printf("%c\n",a[0]);
+			
+			break;
+		case 'c':
+			printf("%c\n",a[0]);
+			
+			break;
+		
+		
+		
+		default:
+			break;
+	}
+	
+	
+	
 	printf("eeeee\n");
-	printf("%c\n",a[0]);
 	return 0;
 }
